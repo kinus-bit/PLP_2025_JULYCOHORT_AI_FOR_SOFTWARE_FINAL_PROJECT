@@ -27,7 +27,7 @@ export default function AppRoutes() {
       {/* Patient */}
       {user?.role === "patient" && (
         <>
-          <Route path="/patient/dashboard" element={<PatientDashboard />} />
+          <Route path="/dashboard" element={<PatientDashboard />} />
           <Route path="/patient/checker" element={<SymptomChecker />} />
           <Route path="/patient/history" element={<History />} />
           <Route path="/patient/profile" element={<Profile />} />
@@ -37,7 +37,7 @@ export default function AppRoutes() {
       {/* Admin */}
       {user?.role === "admin" && (
         <>
-          <Route path="/admin/dashboard" element={<AdminDashboard />} />
+          <Route path="/dashboard" element={<AdminDashboard />} />
           <Route path="/admin/patients" element={<ManagePatients />} />
           <Route path="/admin/model" element={<ManageModel />} />
           <Route path="/admin/logs" element={<LogsReports />} />
