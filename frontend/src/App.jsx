@@ -9,7 +9,7 @@ export default function App() {
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
         <Navbar />
         <AppRoutes />
-        <Toaster position="top-right"/>
+        <Toaster position="top-center"/>
       </div>
      
     </BrowserRouter>
